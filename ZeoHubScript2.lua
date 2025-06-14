@@ -37,7 +37,7 @@ local function showQBreachingCover()
     frame.Name = "LoaderFrame"
     frame.Size = UDim2.new(0, 420, 0, 190)
     frame.Position = UDim2.new(0.5, -210, 0.5, -95)
-    frame.BackgroundColor3 = Color3.fromRGB(64, 42, 8) -- orange-based
+    frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0) -- orange-based
     frame.BackgroundTransparency = 0.09
     frame.BorderSizePixel = 0
     local loaderCorner = Instance.new("UICorner", frame)
@@ -51,7 +51,7 @@ local function showQBreachingCover()
     ring.Size = UDim2.new(0, 90, 0, 90)
     ring.BackgroundTransparency = 1
     ring.Image = "rbxassetid://4928372251"
-    ring.ImageColor3 = Color3.fromRGB(255, 170, 110) -- orange
+    ring.ImageColor3 = Color3.fromRGB(255, 255, 255) -- orange
     ring.ImageTransparency = 0.15
 
     local qCircle = Instance.new("Frame", frame)
@@ -59,7 +59,7 @@ local function showQBreachingCover()
     qCircle.AnchorPoint = Vector2.new(0.5, 0.5)
     qCircle.Position = UDim2.new(0.19,0,0.5,0)
     qCircle.Size = UDim2.new(0, 62, 0, 62)
-    qCircle.BackgroundColor3 = Color3.fromRGB(255, 210, 170) -- orange
+    qCircle.BackgroundColor3 = Color3.fromRGB(255, 255, 255) -- orange
     qCircle.BackgroundTransparency = 0.03
     qCircle.BorderSizePixel = 0
     local qCircleUICorner = Instance.new("UICorner", qCircle)
@@ -89,7 +89,7 @@ local function showQBreachingCover()
         rain.BackgroundTransparency = 1
         rain.Text = string.char(math.random(65,90))..string.char(math.random(48,57))
         rain.Font = Enum.Font.Code
-        rain.TextColor3 = Color3.fromRGB(255, 200, 140) -- orange
+        rain.TextColor3 = Color3.fromRGB(255, 255, 255) -- orange
         rain.TextStrokeTransparency = 0.7
         rain.TextScaled = true
         rain.Name = "Rain"..i
@@ -102,7 +102,7 @@ local function showQBreachingCover()
     status.Position = UDim2.new(0.28, 0, 0.20, 0)
     status.BackgroundTransparency = 1
     status.Text = "BREACHING ROBLOX ANTI CHEAT SYSTEM"
-    status.TextColor3 = Color3.fromRGB(255, 249, 209) -- orange
+    status.TextColor3 = Color3.fromRGB(255, 255, 255) -- orange
     status.TextStrokeTransparency = 0.78
     status.TextTransparency = 0
     status.Font = Enum.Font.GothamBlack
@@ -128,7 +128,7 @@ local function showQBreachingCover()
     progressBarBg.Name = "ProgressBarBg"
     progressBarBg.Size = UDim2.new(0.60, 0, 0.07, 0)
     progressBarBg.Position = UDim2.new(0.28, 0, 0.63, 0)
-    progressBarBg.BackgroundColor3 = Color3.fromRGB(53, 36, 0) -- orange-based
+    progressBarBg.BackgroundColor3 = Color3.fromRGB(255, 255, 255) -- orange-based
     progressBarBg.BackgroundTransparency = 0.22
     progressBarBg.BorderSizePixel = 0
     local barCorner = Instance.new("UICorner", progressBarBg)
