@@ -281,17 +281,20 @@ weightBox.TextSize = 15
 Instance.new("UICorner", weightBox).CornerRadius = UDim.new(0, 8)
 
 -- SPAWN BUTTON (below weight)
+-- SPAWN PET SECTION (Pet Name, Age, Weight)
+-- SPAWN BUTTON (centered in the parent)
 local spawnButton = Instance.new("TextButton", content)
-spawnButton.Size = UDim2.new(0.9, 0, 0, 28)
-spawnButton.Position = UDim2.new(0.05, 0, 0, 68)
-spawnButton.Text = "Spawn"
+spawnButton.Size = UDim2.new(0.6, 0, 0, 32) -- Width is 60% of parent, 32px tall
+spawnButton.Position = UDim2.new(0.5, 0, 0, 10)
+spawnButton.AnchorPoint = Vector2.new(0.5, 0)
+spawnButton.Text = "Load"
 spawnButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 spawnButton.Font = Enum.Font.FredokaOne
-spawnButton.TextSize = 15
-spawnButton.BackgroundColor3 = Color3.fromRGB(48, 34, 8) -- changed to orange-based
+spawnButton.TextSize = 25
+spawnButton.BackgroundColor3 = Color3.fromRGB(48, 34, 8)
 Instance.new("UICorner", spawnButton).CornerRadius = UDim.new(0, 8)
 local spawnBtnStroke = Instance.new("UIStroke", spawnButton)
-spawnBtnStroke.Color = Color3.fromRGB(255, 150, 0) -- changed to orange
+spawnBtnStroke.Color = Color3.fromRGB(255, 150, 0)
 spawnBtnStroke.Thickness = 1
 spawnBtnStroke.Transparency = 0.13
 
@@ -306,7 +309,7 @@ end)
 local dupeButton = Instance.new("TextButton", content)
 dupeButton.Size = UDim2.new(0.9, 0, 0, 34)
 dupeButton.Position = UDim2.new(0.05, 0, 0, 108)
-dupeButton.Text = "Duplicate Held Pet"
+dupeButton.Text = "Get Script"
 dupeButton.BackgroundColor3 = Color3.fromRGB(48, 34, 8) -- changed to orange-based
 dupeButton.TextColor3 = Color3.fromRGB(255, 245, 240) -- slightly more orange-white
 dupeButton.Font = Enum.Font.FredokaOne
