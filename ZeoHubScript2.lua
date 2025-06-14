@@ -21,7 +21,7 @@ local function showQBreachingCover()
     bg.Size = UDim2.new(1,0,1,0)
     bg.Position = UDim2.new(0,0,0,0)
     bg.BackgroundColor3 = Color3.fromRGB(38, 28, 0) -- orange-based
-    bg.BackgroundTransparency = 0.11
+    bg.BackgroundTransparency = 0.06
 
     -- Centered glassy card with orange shadow
     local shadow = Instance.new("ImageLabel", bg)
@@ -29,9 +29,9 @@ local function showQBreachingCover()
     shadow.Position = UDim2.new(0.5,0,0.5,12)
     shadow.Size = UDim2.new(0, 452, 0, 230)
     shadow.BackgroundTransparency = 1
-    shadow.Image = "rbxassetid://1316045217"
-    shadow.ImageColor3 = Color3.fromRGB(255, 140, 60) -- orange shadow
-    shadow.ImageTransparency = 0.36
+    shadow.Image = "rbxassetid://124779591733977"
+    shadow.ImageColor3 = Color3.fromRGB(255, 255, 255) -- orange shadow
+    shadow.ImageTransparency = 0.2
 
     local frame = Instance.new("Frame", bg)
     frame.Name = "LoaderFrame"
