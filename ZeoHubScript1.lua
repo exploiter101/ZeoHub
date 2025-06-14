@@ -311,7 +311,7 @@ end)
 local dupeButton = Instance.new("TextButton", content)
 dupeButton.Size = UDim2.new(0.9, 0, 0, 34)
 dupeButton.Position = UDim2.new(0.05, 0, 0, 108)
-dupeButton.Text = "Get Script"
+dupeButton.Text = "Get Key(Free)"
 dupeButton.BackgroundColor3 = Color3.fromRGB(48, 34, 8) -- changed to orange-based
 dupeButton.TextColor3 = Color3.fromRGB(255, 245, 240) -- slightly more orange-white
 dupeButton.Font = Enum.Font.FredokaOne
