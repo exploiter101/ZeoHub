@@ -281,12 +281,10 @@ weightBox.TextSize = 15
 Instance.new("UICorner", weightBox).CornerRadius = UDim.new(0, 8)
 
 -- SPAWN BUTTON (below weight)
--- SPAWN PET SECTION (Pet Name, Age, Weight)
--- SPAWN BUTTON (centered in the parent)
 local spawnButton = Instance.new("TextButton", content)
-spawnButton.Size = UDim2.new(0.6, 0, 0, 32) -- Width is 60% of parent, 32px tall
-spawnButton.Position = UDim2.new(0.5, 0, 0, 10)
+spawnButton.Size = UDim2.new(0.9, 0, 0, 38) -- Width is 60% of parent, 32px tall
 spawnButton.AnchorPoint = Vector2.new(0.5, 0)
+spawnButton.Position = UDim2.new(0.5, 0, 0.25, 0)
 spawnButton.Text = "Load"
 spawnButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 spawnButton.Font = Enum.Font.FredokaOne
