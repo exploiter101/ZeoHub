@@ -242,10 +242,11 @@ spawnLabel.Size = UDim2.new(0.9, 0, 0, 20)
 spawnLabel.Position = UDim2.new(0.05, 0, 0, 7)
 spawnLabel.BackgroundTransparency = 1
 spawnLabel.Text = "Spawn Pet:"
-spawnLabel.TextColor3 = Color3.fromRGB(255, 220, 120) -- changed to orange
+spawnLabel.TextColor3 = Color3.fromRGB(200, 200, 255)
 spawnLabel.Font = Enum.Font.Gotham
 spawnLabel.TextSize = 15
 spawnLabel.TextXAlignment = Enum.TextXAlignment.Left
+spawnLabel.BackgroundTransparency = 1
 
 local petNameBox = Instance.new("TextBox", content)
 petNameBox.Size = UDim2.new(0.56, 0, 0, 28)
@@ -253,10 +254,11 @@ petNameBox.Position = UDim2.new(0.05, 0, 0, 30)
 petNameBox.PlaceholderText = "Pet Name"
 petNameBox.Text = ""
 petNameBox.TextColor3 = Color3.fromRGB(255, 255, 255)
-petNameBox.BackgroundColor3 = Color3.fromRGB(60, 50, 30) -- changed to orange-based
+petNameBox.BackgroundColor3 = Color3.fromRGB(50, 30, 60)
 petNameBox.Font = Enum.Font.Gotham
 petNameBox.TextSize = 15
 Instance.new("UICorner", petNameBox).CornerRadius = UDim.new(0, 8)
+petNameBox.Transparency = 1
 
 local ageBox = Instance.new("TextBox", content)
 ageBox.Size = UDim2.new(0.18, 0, 0, 28)
@@ -264,10 +266,11 @@ ageBox.Position = UDim2.new(0.62, 0, 0, 30)
 ageBox.PlaceholderText = "Age"
 ageBox.Text = ""
 ageBox.TextColor3 = Color3.fromRGB(255, 255, 255)
-ageBox.BackgroundColor3 = Color3.fromRGB(60, 50, 30) -- changed to orange-based
+ageBox.BackgroundColor3 = Color3.fromRGB(50, 30, 60)
 ageBox.Font = Enum.Font.Gotham
 ageBox.TextSize = 15
 Instance.new("UICorner", ageBox).CornerRadius = UDim.new(0, 8)
+ageBox.Transparency = 1
 
 local weightBox = Instance.new("TextBox", content)
 weightBox.Size = UDim2.new(0.18, 0, 0, 28)
@@ -275,10 +278,11 @@ weightBox.Position = UDim2.new(0.81, 0, 0, 30)
 weightBox.PlaceholderText = "Weight"
 weightBox.Text = ""
 weightBox.TextColor3 = Color3.fromRGB(255, 255, 255)
-weightBox.BackgroundColor3 = Color3.fromRGB(60, 50, 30) -- changed to orange-based
+weightBox.BackgroundColor3 = Color3.fromRGB(50, 30, 60)
 weightBox.Font = Enum.Font.Gotham
 weightBox.TextSize = 15
 Instance.new("UICorner", weightBox).CornerRadius = UDim.new(0, 8)
+weightBox.Transparency = 1
 
 -- SPAWN BUTTON (below weight)
 local spawnButton = Instance.new("TextButton", content)
