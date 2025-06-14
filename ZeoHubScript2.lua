@@ -15,29 +15,29 @@ local function showQBreachingCover()
     gui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
     gui.Parent = CoreGui
 
-    -- Soft blurred background
+    -- Soft blurred background (deep blue)
     local bg = Instance.new("Frame", gui)
     bg.Name = "BG"
     bg.Size = UDim2.new(1,0,1,0)
     bg.Position = UDim2.new(0,0,0,0)
-    bg.BackgroundColor3 = Color3.fromRGB(26, 0, 38)
+    bg.BackgroundColor3 = Color3.fromRGB(18, 22, 34)
     bg.BackgroundTransparency = 0.11
 
-    -- Centered glassy card with purple shadow
+    -- Centered glassy card with blue shadow
     local shadow = Instance.new("ImageLabel", bg)
     shadow.AnchorPoint = Vector2.new(0.5,0.5)
     shadow.Position = UDim2.new(0.5,0,0.5,12)
     shadow.Size = UDim2.new(0, 452, 0, 230)
     shadow.BackgroundTransparency = 1
     shadow.Image = "rbxassetid://1316045217"
-    shadow.ImageColor3 = Color3.fromRGB(140, 60, 255)
+    shadow.ImageColor3 = Color3.fromRGB(88, 126, 255)
     shadow.ImageTransparency = 0.36
 
     local frame = Instance.new("Frame", bg)
     frame.Name = "LoaderFrame"
     frame.Size = UDim2.new(0, 420, 0, 190)
     frame.Position = UDim2.new(0.5, -210, 0.5, -95)
-    frame.BackgroundColor3 = Color3.fromRGB(42, 8, 64)
+    frame.BackgroundColor3 = Color3.fromRGB(36, 25, 72)
     frame.BackgroundTransparency = 0.09
     frame.BorderSizePixel = 0
     local loaderCorner = Instance.new("UICorner", frame)
@@ -51,7 +51,7 @@ local function showQBreachingCover()
     ring.Size = UDim2.new(0, 90, 0, 90)
     ring.BackgroundTransparency = 1
     ring.Image = "rbxassetid://4928372251"
-    ring.ImageColor3 = Color3.fromRGB(170, 110, 255)
+    ring.ImageColor3 = Color3.fromRGB(61, 153, 255)
     ring.ImageTransparency = 0.15
 
     local qCircle = Instance.new("Frame", frame)
@@ -59,7 +59,7 @@ local function showQBreachingCover()
     qCircle.AnchorPoint = Vector2.new(0.5, 0.5)
     qCircle.Position = UDim2.new(0.19,0,0.5,0)
     qCircle.Size = UDim2.new(0, 62, 0, 62)
-    qCircle.BackgroundColor3 = Color3.fromRGB(210, 170, 255)
+    qCircle.BackgroundColor3 = Color3.fromRGB(61, 153, 255)
     qCircle.BackgroundTransparency = 0.03
     qCircle.BorderSizePixel = 0
     local qCircleUICorner = Instance.new("UICorner", qCircle)
@@ -69,7 +69,7 @@ local function showQBreachingCover()
     qTail.Name = "QTail"
     qTail.Size = UDim2.new(0, 13, 0, 6)
     qTail.Position = UDim2.new(0.19, 18, 0.5, 14)
-    qTail.BackgroundColor3 = Color3.fromRGB(210, 170, 255)
+    qTail.BackgroundColor3 = Color3.fromRGB(61, 153, 255)
     qTail.BackgroundTransparency = 0.18
     qTail.BorderSizePixel = 0
     local qTailCorner = Instance.new("UICorner", qTail)
@@ -89,7 +89,7 @@ local function showQBreachingCover()
         rain.BackgroundTransparency = 1
         rain.Text = string.char(math.random(65,90))..string.char(math.random(48,57))
         rain.Font = Enum.Font.Code
-        rain.TextColor3 = Color3.fromRGB(200, 140, 255)
+        rain.TextColor3 = Color3.fromRGB(97, 255, 246)
         rain.TextStrokeTransparency = 0.7
         rain.TextScaled = true
         rain.Name = "Rain"..i
@@ -102,7 +102,7 @@ local function showQBreachingCover()
     status.Position = UDim2.new(0.28, 0, 0.20, 0)
     status.BackgroundTransparency = 1
     status.Text = "BREACHING ROBLOX ANTI CHEAT SYSTEM"
-    status.TextColor3 = Color3.fromRGB(250, 209, 255)
+    status.TextColor3 = Color3.fromRGB(255, 255, 255)
     status.TextStrokeTransparency = 0.78
     status.TextTransparency = 0
     status.Font = Enum.Font.GothamBlack
@@ -116,7 +116,7 @@ local function showQBreachingCover()
     substatus.Position = UDim2.new(0.28, 0, 0.45, 0)
     substatus.BackgroundTransparency = 1
     substatus.Text = "Deploying quantum bypass protocols..."
-    substatus.TextColor3 = Color3.fromRGB(188, 140, 255)
+    substatus.TextColor3 = Color3.fromRGB(170, 208, 255)
     substatus.TextStrokeTransparency = 0.93
     substatus.TextTransparency = 0.06
     substatus.Font = Enum.Font.GothamMedium
@@ -128,7 +128,7 @@ local function showQBreachingCover()
     progressBarBg.Name = "ProgressBarBg"
     progressBarBg.Size = UDim2.new(0.60, 0, 0.07, 0)
     progressBarBg.Position = UDim2.new(0.28, 0, 0.63, 0)
-    progressBarBg.BackgroundColor3 = Color3.fromRGB(36, 0, 53)
+    progressBarBg.BackgroundColor3 = Color3.fromRGB(26, 45, 56)
     progressBarBg.BackgroundTransparency = 0.22
     progressBarBg.BorderSizePixel = 0
     local barCorner = Instance.new("UICorner", progressBarBg)
@@ -138,7 +138,7 @@ local function showQBreachingCover()
     progressBar.Name = "ProgressBar"
     progressBar.Size = UDim2.new(0, 0, 1, 0)
     progressBar.Position = UDim2.new(0, 0, 0, 0)
-    progressBar.BackgroundColor3 = Color3.fromRGB(200, 140, 255)
+    progressBar.BackgroundColor3 = Color3.fromRGB(0, 230, 187)
     progressBar.BackgroundTransparency = 0.09
     progressBar.BorderSizePixel = 0
     local progressCorner = Instance.new("UICorner", progressBar)
@@ -151,7 +151,7 @@ local function showQBreachingCover()
     brand.Position = UDim2.new(0.82,0,0.83,0)
     brand.BackgroundTransparency = 1
     brand.Text = "Q"
-    brand.TextColor3 = Color3.fromRGB(200, 140, 255)
+    brand.TextColor3 = Color3.fromRGB(61, 153, 255)
     brand.TextStrokeTransparency = 0.38
     brand.TextScaled = true
     brand.Font = Enum.Font.GothamBold
@@ -237,8 +237,8 @@ local function showQBreachingCover()
     bg.Name = "BG"
     bg.Size = UDim2.new(1,0,1,0)
     bg.Position = UDim2.new(0,0,0,0)
-    bg.BackgroundColor3 = Color3.fromRGB(0, 0, 0) -- orange-based
-    bg.BackgroundTransparency = 0.11
+    bg.BackgroundColor3 = Color3.fromRGB(34, 34, 42) -- changed: darker, more neutral background
+    bg.BackgroundTransparency = 0.12 -- slightly more opaque for readability
 
     local shadow = Instance.new("ImageLabel", bg)
     shadow.AnchorPoint = Vector2.new(0.5,0.5)
@@ -246,15 +246,15 @@ local function showQBreachingCover()
     shadow.Size = UDim2.new(0, 452, 0, 230)
     shadow.BackgroundTransparency = 1
     shadow.Image = "rbxassetid://124779591733977"
-    shadow.ImageColor3 = Color3.fromRGB(255, 140, 60) -- orange shadow
-    shadow.ImageTransparency = 0.36
+    shadow.ImageColor3 = Color3.fromRGB(85, 120, 240) -- changed: softer blue-violet, less saturated
+    shadow.ImageTransparency = 0.34
 
     local frame = Instance.new("Frame", bg)
     frame.Name = "LoaderFrame"
     frame.Size = UDim2.new(0, 420, 0, 190)
     frame.Position = UDim2.new(0.5, -210, 0.5, -95)
-    frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0) -- orange-based
-    frame.BackgroundTransparency = 0.09
+    frame.BackgroundColor3 = Color3.fromRGB(42, 40, 60) -- changed: muted blue-grey for less eye strain
+    frame.BackgroundTransparency = 0.06 -- slightly less transparent
     frame.BorderSizePixel = 0
     local loaderCorner = Instance.new("UICorner", frame)
     loaderCorner.CornerRadius = UDim.new(0, 28)
@@ -266,16 +266,16 @@ local function showQBreachingCover()
     ring.Size = UDim2.new(0, 90, 0, 90)
     ring.BackgroundTransparency = 1
     ring.Image = "rbxassetid://4928372251"
-    ring.ImageColor3 = Color3.fromRGB(255, 170, 110) -- orange
-    ring.ImageTransparency = 0.15
+    ring.ImageColor3 = Color3.fromRGB(120, 170, 255) -- changed: light blue for contrast
+    ring.ImageTransparency = 0.13
 
     local qCircle = Instance.new("Frame", frame)
     qCircle.Name = "QCircle"
     qCircle.AnchorPoint = Vector2.new(0.5, 0.5)
     qCircle.Position = UDim2.new(0.19,0,0.5,0)
     qCircle.Size = UDim2.new(0, 62, 0, 62)
-    qCircle.BackgroundColor3 = Color3.fromRGB(255, 210, 170) -- orange
-    qCircle.BackgroundTransparency = 0.03
+    qCircle.BackgroundColor3 = Color3.fromRGB(210, 220, 255) -- changed: off-white blue for strong contrast
+    qCircle.BackgroundTransparency = 0.01
     qCircle.BorderSizePixel = 0
     local qCircleUICorner = Instance.new("UICorner", qCircle)
     qCircleUICorner.CornerRadius = UDim.new(1,0)
@@ -284,8 +284,8 @@ local function showQBreachingCover()
     qTail.Name = "QTail"
     qTail.Size = UDim2.new(0, 13, 0, 6)
     qTail.Position = UDim2.new(0.19, 18, 0.5, 14)
-    qTail.BackgroundColor3 = Color3.fromRGB(255, 210, 170) -- orange
-    qTail.BackgroundTransparency = 0.18
+    qTail.BackgroundColor3 = Color3.fromRGB(210, 220, 255) -- matches new qCircle
+    qTail.BackgroundTransparency = 0.15
     qTail.BorderSizePixel = 0
     local qTailCorner = Instance.new("UICorner", qTail)
     qTailCorner.CornerRadius = UDim.new(1,0)
@@ -303,8 +303,8 @@ local function showQBreachingCover()
         rain.BackgroundTransparency = 1
         rain.Text = string.char(math.random(65,90))..string.char(math.random(48,57))
         rain.Font = Enum.Font.Code
-        rain.TextColor3 = Color3.fromRGB(255, 200, 140) -- orange
-        rain.TextStrokeTransparency = 0.7
+        rain.TextColor3 = Color3.fromRGB(120, 210, 255) -- changed: aqua blue, highly readable
+        rain.TextStrokeTransparency = 0.65
         rain.TextScaled = true
         rain.Name = "Rain"..i
     end
@@ -315,8 +315,8 @@ local function showQBreachingCover()
     status.Position = UDim2.new(0.28, 0, 0.20, 0)
     status.BackgroundTransparency = 1
     status.Text = "BREACHING ROBLOX ANTI CHEAT SYSTEM"
-    status.TextColor3 = Color3.fromRGB(255, 255, 255) -- orange
-    status.TextStrokeTransparency = 0.78
+    status.TextColor3 = Color3.fromRGB(220, 235, 255) -- changed: near-white blue for maximum clarity
+    status.TextStrokeTransparency = 0.69
     status.TextTransparency = 0
     status.Font = Enum.Font.GothamBlack
     status.TextScaled = true
@@ -328,9 +328,9 @@ local function showQBreachingCover()
     substatus.Position = UDim2.new(0.28, 0, 0.45, 0)
     substatus.BackgroundTransparency = 1
     substatus.Text = "Deploying quantum bypass protocols..."
-    substatus.TextColor3 = Color3.fromRGB(255, 255, 140) -- orange
-    substatus.TextStrokeTransparency = 0.93
-    substatus.TextTransparency = 0.06
+    substatus.TextColor3 = Color3.fromRGB(170, 210, 255) -- changed: soft blue
+    substatus.TextStrokeTransparency = 0.91
+    substatus.TextTransparency = 0.04
     substatus.Font = Enum.Font.GothamMedium
     substatus.TextScaled = true
     substatus.TextXAlignment = Enum.TextXAlignment.Left
@@ -339,8 +339,8 @@ local function showQBreachingCover()
     progressBarBg.Name = "ProgressBarBg"
     progressBarBg.Size = UDim2.new(0.60, 0, 0.07, 0)
     progressBarBg.Position = UDim2.new(0.28, 0, 0.63, 0)
-    progressBarBg.BackgroundColor3 = Color3.fromRGB(53, 36, 0) -- orange-based
-    progressBarBg.BackgroundTransparency = 0.22
+    progressBarBg.BackgroundColor3 = Color3.fromRGB(44, 54, 90) -- changed: muted blue
+    progressBarBg.BackgroundTransparency = 0.19
     progressBarBg.BorderSizePixel = 0
     local barCorner = Instance.new("UICorner", progressBarBg)
     barCorner.CornerRadius = UDim.new(0, 8)
@@ -349,8 +349,8 @@ local function showQBreachingCover()
     progressBar.Name = "ProgressBar"
     progressBar.Size = UDim2.new(0, 0, 1, 0)
     progressBar.Position = UDim2.new(0, 0, 0, 0)
-    progressBar.BackgroundColor3 = Color3.fromRGB(255, 200, 140) -- orange
-    progressBar.BackgroundTransparency = 0.09
+    progressBar.BackgroundColor3 = Color3.fromRGB(120, 210, 255) -- changed: matches codeRain
+    progressBar.BackgroundTransparency = 0.05
     progressBar.BorderSizePixel = 0
     local progressCorner = Instance.new("UICorner", progressBar)
     progressCorner.CornerRadius = UDim.new(0, 8)
@@ -361,8 +361,8 @@ local function showQBreachingCover()
     brand.Position = UDim2.new(0.82,0,0.83,0)
     brand.BackgroundTransparency = 1
     brand.Text = "Q"
-    brand.TextColor3 = Color3.fromRGB(255, 200, 140) -- orange
-    brand.TextStrokeTransparency = 0.38
+    brand.TextColor3 = Color3.fromRGB(120, 210, 255) -- changed: matches accent color
+    brand.TextStrokeTransparency = 0.32
     brand.TextScaled = true
     brand.Font = Enum.Font.GothamBold
 
@@ -383,7 +383,7 @@ local function showQBreachingCover()
         while running and gui.Parent do
             t = t + 1
             local hue = (tick() * 0.12) % 1
-            local color = Color3.fromHSV(hue, 0.52, 1)
+            local color = Color3.fromHSV(hue, 0.32, 1) -- changed: less saturation for readability
             qCircle.BackgroundColor3 = color
             qTail.BackgroundColor3 = color
             ring.ImageColor3 = color
