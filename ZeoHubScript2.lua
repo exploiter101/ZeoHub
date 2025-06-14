@@ -265,7 +265,7 @@ local function showQBreachingCover()
     ring.Position = UDim2.new(0.19,0,0.5,0)
     ring.Size = UDim2.new(0, 90, 0, 90)
     ring.BackgroundTransparency = 1
-    ring.Image = "rbxassetid://124779591733977"
+    ring.Image = "rbxassetid://4928372251"
     ring.ImageColor3 = Color3.fromRGB(255, 170, 110) -- orange
     ring.ImageTransparency = 0.15
 
