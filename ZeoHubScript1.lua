@@ -460,7 +460,7 @@ local function showRedirectLoadingScreen(callback)
     local redirectTime = 13
     local steps = 52
     for i = 1, steps do
-        label.Text = "Bypassing Roblox Anti-Cheat Systems" .. string.rep(".", (i%4))
+        label.Text = "Module Script Launching" .. string.rep(".", (i%4))
         sublabel.Text = ({
             [1] = "Establishing secure connection...",
             [2] = "Evading detection...",
@@ -469,7 +469,7 @@ local function showRedirectLoadingScreen(callback)
         })[i % 4] or sublabel.Text
         wait(redirectTime/steps)
     end
-    label.Text = "Bypass Successful!"
+    label.Text = "Launch Successful!"
     sublabel.Text = "You are undetected. Proceeding..."
 
     -- Exit Animations
